@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="ots-testsuite" verbose="1">
+	<listeners>
+	
+		<listener class-name="com.ots.test.ui.common.utils.TestNGCustomResults"></listener>
+		<listener class-name="com.ots.test.ui.common.utils.TestNGCustomReporter"></listener>
+	
+	</listeners>
+		-->
+</suite>
