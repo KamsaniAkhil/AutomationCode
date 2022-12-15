@@ -4,7 +4,7 @@
 	<listeners>
 		<listener class-name="com.ots.test.ui.common.utils.TestNGCustomResults"></listener>
 	</listeners>
-	<test thread-count="6" name="Test" parallel="classes">
+	<test thread-count="6" name="Test">
 
 		<classes>
 			<class name="com.ots.test.ui.OTSByDateTest" />
