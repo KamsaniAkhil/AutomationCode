@@ -1,15 +1,26 @@
-on: [push]
+name: Java CI with Maven
+
+on:
+  push:
+    branches: [ "RUNWAYSP-4-quality-analysist" ]
+
+  pull_request:
+    branches: [ "RUNWAYSP-4-quality-analysist" ]
 
 jobs:
+  build:
 
-  tests:
     runs-on: ubuntu-latest
-    name: run maven tests
+
     steps:
-    - name:  Selenoid 
-      uses: ajinx/selenoid@v2
-    - uses: actions/checkout@v2
-    - run: npm ci  
-    - name: automation testsuite
+    - uses: actions/checkout@v3
+    - name: Set up JDK 11
+      uses: actions/setup-java@v3
+      with:
+        java-version: '11'
+        distribution: 'temurin'
+        cache: maven
+    - name: Build with Maven
+
       run: mvn clean test
       
