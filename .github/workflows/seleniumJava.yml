@@ -1,0 +1,15 @@
+on: [push]
+
+jobs:
+
+  tests:
+    runs-on: ubuntu-latest
+    name: run maven tests
+    steps:
+    - name:  Selenoid 
+      uses: ajinx/selenoid@v2
+    - uses: actions/checkout@v2
+    - run: npm ci  
+    - name: automation testsuite
+      run: mvn clean test
+      
