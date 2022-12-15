@@ -274,7 +274,21 @@
 			        </plugin>
 				
 				
-
+                                 <plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-war-plugin</artifactId>
+					<executions>
+						<execution>
+							<id>default-cli</id>
+							<goals>
+								<goal>exploded</goal>
+							</goals>
+							<configuration>
+								<webappDirectory>war</webappDirectory>
+							</configuration>
+						</execution>
+					</executions>
+				</plugin>
 <!-- 				<plugin>
 
 					<executions>
