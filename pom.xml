@@ -19,7 +19,6 @@
 		<webuitest.includes>**/*Test.java</webuitest.includes>
 		<webuitest.excludes>**/*Exclude.java</webuitest.excludes>
 		<myTestSourceDirectory>webuitest/src/test/java</myTestSourceDirectory>
-		<defaultGoal>>install</defaultGoal>
 	</properties>
 
 	<dependencies>
@@ -274,10 +273,7 @@
 						<version>3.0.0-M7</version>
 			        </plugin>
 				
-<!-- 				<build>
-					<defaultGoal>install</defaultGoal> <!-- Source directory configuration -->
-					<sourceDirectory>src</sourceDirectory>
-				</build> -->
+				
 
 <!-- 				<plugin>
 
