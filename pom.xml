@@ -18,7 +18,7 @@
 		<skipTests>${module.skip.tests}</skipTests>
 		<webuitest.includes>**/*Test.java</webuitest.includes>
 		<webuitest.excludes>**/*Exclude.java</webuitest.excludes>
-<!-- 		<myTestSourceDirectory>webuitest/src/test/java/com/ots/test/ui/DashboardTest.java</myTestSourceDirectory> -->
+		<myTestSourceDirectory>/webuitest/src/test/java/com/runway/test/ui//myTestSourceDirectory>
 	</properties>
 
 	<dependencies>
@@ -246,7 +246,7 @@
 							<include>${webuitest.test.includes}</include>
 						</includes>
 						<suiteXmlFiles>
-							<suiteXmlFile>testng.xml</suiteXmlFile>
+							<suiteXmlFile>ui-automation/webuitest/testng.xml</suiteXmlFile>
 						</suiteXmlFiles>
 					</configuration>
 				</plugin>
@@ -262,14 +262,14 @@
 					<artifactId>maven-deploy-plugin</artifactId>
 					<version>2.8.2</version>
 				</plugin>
-				 <plugin>
+<!-- 				 <plugin>
 					  <groupId>org.apache.maven.plugins</groupId>
 					  <artifactId>maven-surefire-plugin</artifactId>
 					  <version>3.0.0-M7</version>
 					 <goals>
 					  <goal>test</goal>
 					  </goals>
-				</plugin>
+				</plugin> -->
 				<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-surefire-plugin</artifactId>
