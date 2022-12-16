@@ -1,33 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Codespaces
-Marketplace
-Explore
- 
-@KamsaniAkhil 
-KamsaniAkhil
-/
-AutomationCode
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-AutomationCode/pom.xml
-@KamsaniAkhil
-KamsaniAkhil Added ui in package name
-Latest commit d89f171 2 hours ago
- History
- 1 contributor
-339 lines (316 sloc)  9.38 KB
-
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
