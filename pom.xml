@@ -18,7 +18,7 @@
 		<skipTests>${module.skip.tests}</skipTests>
 		<webuitest.includes>**/*Test.java</webuitest.includes>
 		<webuitest.excludes>**/*Exclude.java</webuitest.excludes>
-		<myTestSourceDirectory>/webuitest/src/test/java/com/runway/test/ui//myTestSourceDirectory>
+<!-- 		<myTestSourceDirectory>/webuitest/src/test/java/com/runway/test/ui//myTestSourceDirectory> -->
 	</properties>
 
 	<dependencies>
