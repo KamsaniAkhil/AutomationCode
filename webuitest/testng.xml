@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Runway">
+	<listeners>
+		<listener class-name="com.ots.test.ui.common.utils.TestNGCustomResults"></listener>
+	</listeners>
+	<test thread-count="6" name="Test">
+
+		<classes>
+			<class name="com.ots.test.ui.OTSByDateTest" />
+			<class name="com.ots.test.api.OTSApiTest" />
+			<class name="com.ots.test.ui.DashboardTest" />
+			<class name="com.ots.test.ui.OtsEnhancement" />
+			<class name="com.ots.test.ui.LoginTest" />
+			<class name="com.ots.test.ui.NegativeOTSByDateTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
