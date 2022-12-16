@@ -29,6 +29,8 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+    - name: maven clean
+      run:  mvn clean test
     - name: Test with Maven  
       run: mvn test -Dtest=DashboardTest
     - name: Step 4 list the current directiory  
