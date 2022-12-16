@@ -1,9 +1,10 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.ots.test</groupId>
+	<groupId>com.ots.test.ui</groupId>
 	<artifactId>webuitest</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 
@@ -18,8 +19,7 @@
 		<skipTests>${module.skip.tests}</skipTests>
 		<webuitest.includes>**/*Test.java</webuitest.includes>
 		<webuitest.excludes>**/*Exclude.java</webuitest.excludes>
-
-
+<!-- 		<myTestSourceDirectory>webuitest/src/test/java/com/ots/test/ui/DashboardTest.java</myTestSourceDirectory> -->
 	</properties>
 
 	<dependencies>
@@ -263,7 +263,69 @@
 					<artifactId>maven-deploy-plugin</artifactId>
 					<version>2.8.2</version>
 				</plugin>
+				 <plugin>
+					  <groupId>org.apache.maven.plugins</groupId>
+					  <artifactId>maven-surefire-plugin</artifactId>
+					  <version>3.0.0-M7</version>
+					 <goals>
+					  <goal>test</goal>
+					  </goals>
+				</plugin>
+				<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-surefire-plugin</artifactId>
+						<version>3.0.0-M7</version>
+					<configuration>
+						<excludes>
+							<exclude>${webuitest.test.excludes}</exclude>
+						</excludes>
+						<includes>
+							<include>${webuitest.test.includes}</include>
+						</includes>
+						<suiteXmlFiles>
+							<suiteXmlFile>webuitest/testng.xml</suiteXmlFile>
+						</suiteXmlFiles>
+					</configuration>
+			        </plugin>
 				
+				
+                                 <plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-war-plugin</artifactId>
+					<executions>
+						<execution>
+							<id>default-cli</id>
+							<goals>
+								<goal>exploded</goal>
+							</goals>
+							<configuration>
+								<webappDirectory>war</webappDirectory>
+							</configuration>
+						</execution>
+					</executions>
+				</plugin>
+<!-- 				<plugin>
+					<executions>
+						<execution>
+							<goals>
+								<goal>test</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+				 -->
+<!-- 				 <plugin>
+                    <groupId>com.github.eirslett</groupId>
+                    <artifactId>frontend-maven-plugin</artifactId> 
+                  
+                        <execution>
+                            <id>npm audit fix</id>
+                            <goals>
+                                <goal>npm</goal>
+                            </goals>
+                        </execution>
+                     
+             </plugin> -->
 
 			</plugins>
 		</pluginManagement>
