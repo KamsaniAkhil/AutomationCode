@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="11" passed="8" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-15T19:47:04 IST" name="Default suite" finished-at="2022-12-15T19:50:07 IST" duration-ms="183352">
+    <groups>
+    </groups>
+    <test started-at="2022-12-15T19:47:04 IST" name="Default test" finished-at="2022-12-15T19:50:07 IST" duration-ms="183352">
+      <class name="com.runway.test.ui.DashboardTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.runway.test.ui.DashboardTest@41488b16]" started-at="2022-12-15T19:47:04 IST" name="setup" finished-at="2022-12-15T19:47:38 IST" duration-ms="34107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.runway.test.ui.DashboardTest@41488b16]" started-at="2022-12-15T19:47:38 IST" name="beforeMethod" finished-at="2022-12-15T19:47:38 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.runway.test.ui.DashboardTest.landingWelcomePage() throws java.io.IOException,com.gurock.testrail.APIException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="landingWelcomePage()[pri:1, instance:com.runway.test.ui.DashboardTest@41488b16]" started-at="2022-12-15T19:47:38 IST" name="landingWelcomePage" finished-at="2022-12-15T19:47:53 IST" duration-ms="15198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- landingWelcomePage -->
+        <test-method signature="SidebarMenuOptions()[pri:2, instance:com.runway.test.ui.DashboardTest@41488b16]" started-at="2022-12-15T19:47:53 IST" name="SidebarMenuOptions" finished-at="2022-12-15T19:48:06 IST" depends-on-methods="com.runway.test.ui.DashboardTest.landingWelcomePage" duration-ms="12414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SidebarMenuOptions -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.runway.test.ui.DashboardTest@41488b16]" started-at="2022-12-15T19:47:53 IST" name="beforeMethod" finished-at="2022-12-15T19:47:53 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.runway.test.ui.DashboardTest.SidebarMenuOptions()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.runway.test.ui.DashboardTest@41488b16]" started-at="2022-12-15T19:48:06 IST" name="beforeMethod" finished-at="2022-12-15T19:48:06 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.runway.test.ui.DashboardTest.headerTitleName() throws java.io.IOException,com.gurock.testrail.APIException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="headerTitleName()[pri:3, instance:com.runway.test.ui.DashboardTest@41488b16]" started-at="2022-12-15T19:48:06 IST" name="headerTitleName" finished-at="2022-12-15T19:48:12 IST" depends-on-methods="com.runway.test.ui.DashboardTest.SidebarMenuOptions" duration-ms="6148" status="FAIL">
+          <exception class="java.lang.IndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index 1 out of bounds for length 1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+at java.base/java.util.Objects.checkIndex(Objects.java:359)
+at java.base/java.util.ArrayList.get(ArrayList.java:427)
+at com.runway.test.ui.DashboardTest.headerTitleName(DashboardTest.java:177)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- headerTitleName -->
+        <test-method signature="sideBarLogoTest()[pri:4, instance:com.runway.test.ui.DashboardTest@41488b16]" started-at="2022-12-15T19:48:12 IST" name="sideBarLogoTest" finished-at="2022-12-15T19:48:18 IST" depends-on-methods="com.runway.test.ui.DashboardTest.landingWelcomePage" duration-ms="6203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sideBarLogoTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.runway.test.ui.DashboardTest@41488b16]" started-at="2022-12-15T19:48:12 IST" name="beforeMethod" finished-at="2022-12-15T19:48:12 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.runway.test.ui.DashboardTest.sideBarLogoTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.runway.test.ui.DashboardTest@41488b16]" started-at="2022-12-15T19:48:18 IST" name="beforeMethod" finished-at="2022-12-15T19:48:18 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.runway.test.ui.DashboardTest.headerToggleIconTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="headerToggleIconTest()[pri:5, instance:com.runway.test.ui.DashboardTest@41488b16]" started-at="2022-12-15T19:48:18 IST" name="headerToggleIconTest" finished-at="2022-12-15T19:48:30 IST" duration-ms="12409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- headerToggleIconTest -->
+        <test-method signature="themeIconTest()[pri:6, instance:com.runway.test.ui.DashboardTest@41488b16]" started-at="2022-12-15T19:48:30 IST" name="themeIconTest" finished-at="2022-12-15T19:48:49 IST" duration-ms="18653" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- themeIconTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.runway.test.ui.DashboardTest@41488b16]" started-at="2022-12-15T19:48:30 IST" name="beforeMethod" finished-at="2022-12-15T19:48:30 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.runway.test.ui.DashboardTest.themeIconTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.runway.test.ui.DashboardTest@41488b16]" started-at="2022-12-15T19:48:49 IST" name="beforeMethod" finished-at="2022-12-15T19:48:49 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.runway.test.ui.DashboardTest.bellIconTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="bellIconTest()[pri:7, instance:com.runway.test.ui.DashboardTest@41488b16]" started-at="2022-12-15T19:48:49 IST" name="bellIconTest" finished-at="2022-12-15T19:49:11 IST" duration-ms="21556" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bellIconTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.runway.test.ui.DashboardTest@41488b16]" started-at="2022-12-15T19:49:11 IST" name="beforeMethod" finished-at="2022-12-15T19:49:11 IST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.runway.test.ui.DashboardTest.profileIconTestBeforeClick()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="profileIconTestBeforeClick()[pri:9, instance:com.runway.test.ui.DashboardTest@41488b16]" started-at="2022-12-15T19:49:11 IST" name="profileIconTestBeforeClick" finished-at="2022-12-15T19:49:26 IST" duration-ms="15444" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- profileIconTestBeforeClick -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.runway.test.ui.DashboardTest@41488b16]" started-at="2022-12-15T19:49:26 IST" name="beforeMethod" finished-at="2022-12-15T19:49:26 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.runway.test.ui.DashboardTest.NavigateToOTSByDate() throws java.io.IOException,com.gurock.testrail.APIException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="NavigateToOTSByDate()[pri:10, instance:com.runway.test.ui.DashboardTest@41488b16]" started-at="2022-12-15T19:49:26 IST" name="NavigateToOTSByDate" finished-at="2022-12-15T19:49:38 IST" duration-ms="12515" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NavigateToOTSByDate -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.runway.test.ui.DashboardTest@41488b16]" started-at="2022-12-15T19:49:38 IST" name="beforeMethod" finished-at="2022-12-15T19:49:38 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.runway.test.ui.DashboardTest.footerElements()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="footerElements()[pri:11, instance:com.runway.test.ui.DashboardTest@41488b16]" started-at="2022-12-15T19:49:38 IST" name="footerElements" finished-at="2022-12-15T19:50:07 IST" duration-ms="28228" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.className: //span[@role='button'] (tried for 25 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.className: //span[@role='button'] (tried for 25 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at com.ots.test.ui.common.utils.UITestSeleniumHelper.waitForElementToBeLoadedByClassName(UITestSeleniumHelper.java:494)
+at com.ots.test.ui.common.utils.UITestSeleniumHelper.findElementByClassName(UITestSeleniumHelper.java:333)
+at com.runway.test.ui.DashboardTest.footerElements(DashboardTest.java:380)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".\/\/span\[\@role\=\'button\'\]"}
+  (Session info: chrome=108.0.5359.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NEXGEN84', ip: '192.168.1.204', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\AKHILK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61501}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6c187a7ad49ef243ae5824d2d5145aab
+*** Element info: {Using=class name, value=//span[@role='button']}
+at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
+at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 31 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- footerElements -->
+        <test-method is-config="true" signature="unsetUp()[pri:0, instance:com.runway.test.ui.DashboardTest@41488b16]" started-at="2022-12-15T19:50:07 IST" name="unsetUp" finished-at="2022-12-15T19:50:07 IST" duration-ms="345" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- unsetUp -->
+      </class> <!-- com.runway.test.ui.DashboardTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
