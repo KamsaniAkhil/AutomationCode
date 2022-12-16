@@ -9,7 +9,7 @@
 		<classes>
 <!-- 			<class name="com.ots.test.ui.OTSByDateTest" />
 			<class name="com.ots.test.api.OTSApiTest" /> -->
-			<class name="DashboardTest" />
+			<class name="com.ots.test.ui.DashboardTest" />
 <!-- 			<class name="com.ots.test.ui.OtsEnhancement" />
 			<class name="com.ots.test.ui.LoginTest" />
 			<class name="com.ots.test.ui.NegativeOTSByDateTest" /> -->
