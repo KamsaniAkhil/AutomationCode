@@ -270,12 +270,23 @@
 					  <goal>test</goal>
 					  </goals>
 				</plugin>
-<!-- 				<plugin>
+				<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-surefire-plugin</artifactId>
 						<version>3.0.0-M7</version>
+					<configuration>
+						<excludes>
+							<exclude>${webuitest.test.excludes}</exclude>
+						</excludes>
+						<includes>
+							<include>${webuitest.test.includes}</include>
+						</includes>
+						<suiteXmlFiles>
+							<suiteXmlFile>testng.xml</suiteXmlFile>
+						</suiteXmlFiles>
+					</configuration>
 			        </plugin>
-				 -->
+				
 				
                                  <plugin>
 					<groupId>org.apache.maven.plugins</groupId>
