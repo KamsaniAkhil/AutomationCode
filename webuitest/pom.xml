@@ -247,7 +247,7 @@
 							<include>${webuitest.test.includes}</include>
 						</includes>
 						<suiteXmlFiles>
-							<suiteXmlFile>webuitest/testng.xml</suiteXmlFile>
+							<suiteXmlFile>testng.xml</suiteXmlFile>
 						</suiteXmlFiles>
 					</configuration>
 				</plugin>
